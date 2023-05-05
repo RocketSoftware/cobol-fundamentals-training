@@ -1,0 +1,6 @@
+*.idy
+*.int
+*.log
+.vscode
+.cobolCellExecution
+SYSOUT
