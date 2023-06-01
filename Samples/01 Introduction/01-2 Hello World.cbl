@@ -1,7 +1,8 @@
-       IDENTIFICATION DIVISION.                                         
-       PROGRAM-ID. HELLOWLD. 
-                                                                                                          
-       PROCEDURE DIVISION.                                                                                                        
-           DISPLAY 'HELLO, COBOL WORLD!'                                       
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. HELLOWLD.
+
+       PROCEDURE DIVISION.
+       100-PROGRAM.
+           DISPLAY 'HELLO, COBOL WORLD!'
            STOP RUN
-           .                                                                                               
+           .

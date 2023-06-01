@@ -11,4 +11,4 @@
            display today
 
            stop run
-           1
+           .

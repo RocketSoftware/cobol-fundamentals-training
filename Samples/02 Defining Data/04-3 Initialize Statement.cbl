@@ -15,12 +15,8 @@
            display my-alphanumeric *> Displays "*****"
 
            initialize my-numeric
-               replacing numeric data by all "9"
-           display my-numeric *> Displays 99999
+               replacing numeric data by 12345
+           display my-numeric *> Displays 12345
 
            stop run
-           .
-
-
-
-           
+           .        

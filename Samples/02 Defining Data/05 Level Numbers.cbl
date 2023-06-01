@@ -30,10 +30,10 @@
            display measurements *> Displays 012001400200022001400210
            display min of wingspan " - " max of wingspan *> Displays "0200 - 0220"
 
-           move "Common Blackbird              " &
-                "Turdus merula                 " to ws-name
-           move 024002500340038508001000 to measurements
-           move 5050000 to uk-breeding-population
+           move "Common Blackbird              Turdus merula" to ws-name
+           move 02400250 to ws-length
+           move 03400385 to wingspan
+           move 08001000 to weight
 
            display common-name *> Displays "Common Blackbird              "
            display scientific-name *> Displays "Turdus merula                 "
