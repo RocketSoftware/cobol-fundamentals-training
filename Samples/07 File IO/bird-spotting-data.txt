@@ -1,0 +1,11 @@
+22/12/2022  Wood Pigeon     Columba palumbus        0004
+22/12/2022  Stock Dove      Columba oenas           0002
+22/12/2022  Collared Dove   Streptopelia decaocto   0005
+22/12/2022  Blackbird       Turdus merula           0001
+22/12/2022  Starling        Sturnus vulgaris        0011
+22/12/2022  Robin           Erithacus rubecula      0001
+22/12/2022  House Sparrow   Passer domesticus       0011
+22/12/2022  Dunnock         Prunella modularis      0002
+22/12/2022  Coal Tit        Periparus ater          0001
+22/12/2022  Blue Tit        Cyanistes caeruleus     0001
+22/12/2022  Great Tit       Parus major             0001
