@@ -1,6 +1,6 @@
-# Sample programs and notebooks to use with the Micro Focus&trade; COBOL Fundamentals Training Course by OpenText
+# Sample Programs and Notebooks to Use with the Micro Focus&trade; COBOL Fundamentals Training Course by OpenText
 
-The Micro Focus&trade; COBOL Fundamentals Training course Course is an instructor-led video training course in COBOL that teaches the fundamentals of the COBOL language, introduces the Micro Focus&trade; COBOL syntax, and usage of Micro Focus COBOL tools.
+The Micro Focus&trade; COBOL Fundamentals Training Course is an instructor-led video course in COBOL programming that teaches the fundamentals of the COBOL language, introduces the Micro Focus&trade; COBOL syntax, and usage of Micro Focus COBOL tools.
 The course sample programs and notebooks available here are for use with the Learn Micro Focus&trade; COBOL extension for Visual Studio.
 
 For full details about the course visit [www.cobol.com](https://www.cobol.com).
