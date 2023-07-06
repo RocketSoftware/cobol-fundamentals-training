@@ -5,5 +5,11 @@
       * Nothing herein should be construed as constituting an additional warranty. 
       * Open Text shall not be liable for technical or editorial errors or omissions contained herein. 
       * The information contained herein is subject to change without notice. 
-       
-       display "Hello, COBOL World!"
+
+       working-storage section.
+       01  my-alphanumeric pic X(20) value "Hello, COBOL World!".
+
+       procedure division.
+           display my-alphanumeric(8:5) *> Displays "COBOL"
+           stop run
+           .

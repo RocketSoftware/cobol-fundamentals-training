@@ -1,3 +1,11 @@
+      * Copyright © 2023 Open Text.
+      
+      * The only warranties for products and services of Open Text and its affiliates and licensors ("Open Text") 
+      * are as may be set forth in the express warranty statements accompanying such products and services. 
+      * Nothing herein should be construed as constituting an additional warranty. 
+      * Open Text shall not be liable for technical or editorial errors or omissions contained herein. 
+      * The information contained herein is subject to change without notice.        
+       
        working-storage section.
        01  my-alphanumeric pic X(10).
 
@@ -9,10 +17,6 @@
            move "Hi" to my-alphanumeric
            perform demonstrate-if
            perform demonstrate-evaluate 
-
-           move "Greetings" to my-alphanumeric
-           perform demonstrate-if
-           perform demonstrate-evaluate  
 
            move "Goodbye" to my-alphanumeric
            perform demonstrate-if
@@ -28,11 +32,7 @@
                if my-alphanumeric equals "Hi"
                    continue
                else
-                   if my-alphanumeric equals "Greetings"
-                       exit section
-                   else
-                       display "IF: Nice to meet you!"
-                   end-if
+                   display "IF: Nice to meet you!"
                end-if
            end-if
            display "IF: Goodbye, World!"
@@ -44,8 +44,6 @@
                    display "EVALUATE: Hello, World!"
                when "Hi"
                    continue
-               when "Greetings"
-                   exit section
                when other
                    display "EVALUATE: Nice to meet you!"
            end-evaluate

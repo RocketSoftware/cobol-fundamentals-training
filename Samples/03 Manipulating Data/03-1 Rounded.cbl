@@ -7,26 +7,25 @@
       * The information contained herein is subject to change without notice.        
        
        working-storage section.
-       01  my-variable pic 9.
+       01  my-variable     binary-long.
+       01  my-decimal      pic 9V9 comp-5.
 
        procedure division.
            initialize my-variable
-           perform display-then-increment *> Displays 0
-           perform display-then-increment *> Displays 1
-           perform display-then-increment *> Displays 2
-           
-           stop run
-           .
+           move 1.5 to my-decimal
 
-       display-then-increment section.
-           perform display-variable
-           perform increment-variable
-           .
-
-       display-variable section.
+       *>  1.5 gets rounded down to 1
+           add my-decimal to my-variable *> 1.5 + 0 = 1.5
            display my-variable
-           .
 
-       increment-variable section.
-           add 1 to my-variable
+       *>  2.5 gets rounded up to 3
+           add my-decimal to my-variable rounded *> 1.5 + 1 = 2.5
+           display my-variable
+
+       *>  4.4 gets rounded down to 4
+           move 1.4 to my-decimal
+           add my-decimal to my-variable rounded *> 1.4 + 3 = 4.4
+           display my-variable
+
+           stop run
            .

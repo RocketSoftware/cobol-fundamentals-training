@@ -1,3 +1,11 @@
+      * Copyright © 2023 Open Text.
+      
+      * The only warranties for products and services of Open Text and its affiliates and licensors ("Open Text") 
+      * are as may be set forth in the express warranty statements accompanying such products and services. 
+      * Nothing herein should be construed as constituting an additional warranty. 
+      * Open Text shall not be liable for technical or editorial errors or omissions contained herein. 
+      * The information contained herein is subject to change without notice.        
+       
        working-storage section.
        01  person               typedef.
            05  #name.
@@ -37,6 +45,22 @@
                set my-person::#other to true
            end-if
 
+           perform demonstrate-evaluate-gender
+           perform demonstrate-evaluate-true
+           .
+
+       demonstrate-evaluate-gender section.
+           evaluate my-person::gender
+               when "F"
+                   display "Hello, Mrs. " my-person::last-name
+               when "M"
+                   display "Hello, Mr. " my-person::last-name
+               when "O"
+                   display "Hello, Mx. " my-person::last-name
+           end-evaluate
+           .
+
+       demonstrate-evaluate-true section.
            evaluate true
                when my-person::female
                    display "Hello, Mrs. " my-person::last-name

@@ -1,6 +1,9 @@
 *.idy
-*.int
 *.log
 .vscode
 .cobolCellExecution
 SYSOUT
+
+*.int
+!Assignment Solutions/*/*.int
+!Samples/04 Modular Programming/*.int
