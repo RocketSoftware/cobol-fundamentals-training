@@ -1,11 +1,5 @@
-      * Copyright © 2023 Open Text.
-      
-      * The only warranties for products and services of Open Text and its affiliates and licensors ("Open Text") 
-      * are as may be set forth in the express warranty statements accompanying such products and services. 
-      * Nothing herein should be construed as constituting an additional warranty. 
-      * Open Text shall not be liable for technical or editorial errors or omissions contained herein. 
-      * The information contained herein is subject to change without notice.        
-       
+      * © 2023-2025 Rocket Software, Inc. or its affiliates. All Rights Reserved.
+
        input-output section.
            select employee-data
                assign "employee-data.dat"
@@ -22,7 +16,7 @@
                10  first-name          pic X(20).
                10  last-name           pic X(20).
            05  employee-salary         pic 9(7)V9(2).
-       
+
        working-storage section.
        01  employee-full-name          pic X(40).
        01  formatted-salary            pic $(2),$(3),$(3).9(2).
@@ -55,7 +49,7 @@
                when delete-function
                    perform delete-record
            end-evaluate
-           
+
            close employee-data
 
            goback
@@ -87,8 +81,8 @@
 
                if valid-amend-selection and not amend-exit
                    rewrite selected-employee
-                       invalid key 
-                           display "Failure to amend record " 
+                       invalid key
+                           display "Failure to amend record "
                                     employee-number
                        not invalid key
                            display "Record " employee-number
@@ -163,7 +157,7 @@
        format-selected-employee-data section.
            initialize employee-full-name
            string selected-employee::first-name delimited by space
-                  " " delimited by size  
+                  " " delimited by size
                   selected-employee::last-name delimited by space
                   into employee-full-name
            end-string
@@ -171,4 +165,3 @@
            initialize formatted-salary
            move selected-employee::employee-salary to formatted-salary
            .
-           

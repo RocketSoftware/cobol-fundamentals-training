@@ -1,13 +1,7 @@
-      * Copyright © 2023 Open Text.
-      
-      * The only warranties for products and services of Open Text and its affiliates and licensors ("Open Text") 
-      * are as may be set forth in the express warranty statements accompanying such products and services. 
-      * Nothing herein should be construed as constituting an additional warranty. 
-      * Open Text shall not be liable for technical or editorial errors or omissions contained herein. 
-      * The information contained herein is subject to change without notice.        
-       
+      * © 2023-2025 Rocket Software, Inc. or its affiliates. All Rights Reserved.
+
        input-output section.
-           select bird-spotting-data 
+           select bird-spotting-data
                assign "bird-spotting-data-indexed.dat"
                organization indexed
                access random
@@ -40,7 +34,7 @@
 
        procedure division.
            open i-o bird-spotting-data
-           
+
            perform check-file-status-code
            perform read-record
            perform rewrite-record
@@ -62,7 +56,7 @@
        read-record section.
            move 5 to record-key
            read bird-spotting-data
-               invalid key 
+               invalid key
                    display "Record not found " record-key
                not invalid key
                    display bird-spotting-record
@@ -97,10 +91,9 @@
        delete-record section.
            move 7 to record-key
            delete bird-spotting-data
-               invalid key 
+               invalid key
                    display "Failure to delete " record-key
                not invalid key
                    display "Record " record-key " successfully deleted"
            end-delete
            .
-           

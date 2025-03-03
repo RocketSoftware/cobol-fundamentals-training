@@ -1,10 +1,4 @@
-      * Copyright © 2023 Open Text.
-      
-      * The only warranties for products and services of Open Text and its affiliates and licensors ("Open Text") 
-      * are as may be set forth in the express warranty statements accompanying such products and services. 
-      * Nothing herein should be construed as constituting an additional warranty. 
-      * Open Text shall not be liable for technical or editorial errors or omissions contained herein. 
-      * The information contained herein is subject to change without notice. 
+      * © 2023-2025 Rocket Software, Inc. or its affiliates. All Rights Reserved.
 
        working-storage section.
        01  my-reference    binary-long value 5.
@@ -26,7 +20,7 @@
 
            perform by-reference(my-reference)
            display my-reference *> 5 + 1 = 6
-           
+
            goback
            .
 
@@ -35,7 +29,7 @@
            add 1 to value-parameter giving return-parameter
            .
 
-       no-parameters section () 
+       no-parameters section ()
                      returning return-parameter as binary-long.
            move 5 to return-parameter
            .
@@ -44,7 +38,7 @@
                           returning return-parameter as binary-long.
            add 1 to value-parameter giving return-parameter
            .
-           
+
        by-value section (value value-parameter as binary-long).
            add 1 to value-parameter
            .
