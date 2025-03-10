@@ -1,22 +1,16 @@
-      * Copyright © 2023 Open Text.
-      
-      * The only warranties for products and services of Open Text and its affiliates and licensors ("Open Text") 
-      * are as may be set forth in the express warranty statements accompanying such products and services. 
-      * Nothing herein should be construed as constituting an additional warranty. 
-      * Open Text shall not be liable for technical or editorial errors or omissions contained herein. 
-      * The information contained herein is subject to change without notice.        
-       
+      * © 2023-2025 Rocket Software, Inc. or its affiliates. All Rights Reserved.
+
        working-storage section.
        78  TABLE-SIZE      value 5.
-       01  sales           binary-long occurs TABLE-SIZE 
-                                       indexed by i 
-                                       values 1000, 2000, 3000, 
+       01  sales           binary-long occurs TABLE-SIZE
+                                       indexed by i
+                                       values 1000, 2000, 3000,
                                               4000, 5000.
 
        procedure division.
            perform calculate-total-sales
            perform demonstrate-search
-           
+
            goback
            .
 
@@ -31,7 +25,7 @@
        demonstrate-search section.
            set i to 1
            search sales
-               at end 
+               at end
                    display "Invalid Index: " i
                when i = 3
                    display "Sales at index 3 are: " sales(i)

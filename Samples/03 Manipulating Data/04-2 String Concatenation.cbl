@@ -1,10 +1,4 @@
-      * Copyright © 2023 Open Text.
-      
-      * The only warranties for products and services of Open Text and its affiliates and licensors ("Open Text") 
-      * are as may be set forth in the express warranty statements accompanying such products and services. 
-      * Nothing herein should be construed as constituting an additional warranty. 
-      * Open Text shall not be liable for technical or editorial errors or omissions contained herein. 
-      * The information contained herein is subject to change without notice. 
+      * © 2023-2025 Rocket Software, Inc. or its affiliates. All Rights Reserved.
 
        working-storage section.
        78  FIRST-NAME-STRING   value "first name".
@@ -27,13 +21,13 @@
            display "What is your" space LAST-NAME-STRING "?"
            accept last-name
 
-           string first-name last-name 
+           string first-name last-name
                delimited by size
                into full-name
            end-string
            display "Hello " full-name
-           
-           string "Hubert" space "Wolfeschlegelsteinhausenbergerdorff" 
+
+           string "Hubert" space "Wolfeschlegelsteinhausenbergerdorff"
                into full-name
                on overflow
                    display "Last name is too long!"

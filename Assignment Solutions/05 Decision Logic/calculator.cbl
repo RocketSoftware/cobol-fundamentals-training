@@ -1,11 +1,5 @@
-      * Copyright © 2023 Open Text.
-      
-      * The only warranties for products and services of Open Text and its affiliates and licensors ("Open Text") 
-      * are as may be set forth in the express warranty statements accompanying such products and services. 
-      * Nothing herein should be construed as constituting an additional warranty. 
-      * Open Text shall not be liable for technical or editorial errors or omissions contained herein. 
-      * The information contained herein is subject to change without notice.        
-       
+      * © 2023-2025 Rocket Software, Inc. or its affiliates. All Rights Reserved.
+
        linkage section.
        copy user-inputs.
        copy calculator-results.
@@ -22,12 +16,12 @@
                when division-function
                    perform calculate-division
            end-evaluate
-           
+
            goback
            .
 
        calculate-addition section.
-           add first-number to second-number 
+           add first-number to second-number
                giving addition-result rounded
                on size error
                    display "Error during addition."

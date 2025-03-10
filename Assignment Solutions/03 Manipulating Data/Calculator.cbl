@@ -1,11 +1,5 @@
-      * Copyright © 2023 Open Text.
-      
-      * The only warranties for products and services of Open Text and its affiliates and licensors ("Open Text") 
-      * are as may be set forth in the express warranty statements accompanying such products and services. 
-      * Nothing herein should be construed as constituting an additional warranty. 
-      * Open Text shall not be liable for technical or editorial errors or omissions contained herein. 
-      * The information contained herein is subject to change without notice.  
-       
+      * © 2023-2025 Rocket Software, Inc. or its affiliates. All Rights Reserved.
+
        working-storage section.
        01  first-number        binary-char.
        01  second-number       binary-char.
@@ -17,7 +11,7 @@
        procedure division.
            display "Enter your first number:"
            accept first-number
-           
+
            display "Enter your second number:"
            accept second-number
 
@@ -29,7 +23,7 @@
                    display "Result of Addition: " formatted-result
            end-add
 
-           subtract first-number from second-number giving result 
+           subtract first-number from second-number giving result
                rounded
                on size error
                    display "Error during subtraction."
@@ -62,8 +56,7 @@
                into integer #decimal
            end-unstring
            display "Integer of Mean: " integer
-           display "Decimal of Mean: " #decimal               
+           display "Decimal of Mean: " #decimal
 
            stop run
            .
-           

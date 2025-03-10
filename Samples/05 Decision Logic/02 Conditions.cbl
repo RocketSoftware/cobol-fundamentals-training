@@ -1,21 +1,15 @@
-      * Copyright © 2023 Open Text.
-      
-      * The only warranties for products and services of Open Text and its affiliates and licensors ("Open Text") 
-      * are as may be set forth in the express warranty statements accompanying such products and services. 
-      * Nothing herein should be construed as constituting an additional warranty. 
-      * Open Text shall not be liable for technical or editorial errors or omissions contained herein. 
-      * The information contained herein is subject to change without notice.        
-       
+      * © 2023-2025 Rocket Software, Inc. or its affiliates. All Rights Reserved.
+
        working-storage section.
        01  my-alphanumeric pic X(10) value "Hello".
        01  my-decimal      pic 9(2)V9(2) value 5.
        01  my-numeric      binary-short value 5.
-       
+
        procedure division.
            perform demonstrate-equality
            perform demonstrate-class-conditions
            perform demonstrate-sign-conditions
-           
+
            goback
            .
 
@@ -29,14 +23,14 @@
            if my-numeric equal my-decimal
                display "Numerics compare their values!"
            end-if
-           
+
        *>  [is] [not] equal/= [to] [then]
            if my-numeric = my-decimal
                display "You can also use symbols!"
            end-if
 
            if my-numeric equals my-decimal
-               display "Micro Focus COBOL has additional keywords!"
+               display "Rocket COBOL has additional keywords!"
            end-if
            .
 
